@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+        </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="SQRmain_page.css">
+        <script src="PQRiniciarSesion.js" type="text/javascript"></script>
+        
+        <title>TIMO-SQR</title>
+       
+    </head>
+    <body>
+        <div id="head">
+            <h1>Bienvenido a nuestro sistema de peticiones, quejas y reclamos</h1>
+        </div>
+        <div class="container">
+            <div id="SQRbox">
+                <h2>Por favor, llene los siguientes datos:</h2>
+                <form action="./AdministrarPQRs" method="POST">
+                    <div id="form-items">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" placeholder="Ingrese su nombre" required> <br>
+                        <label for="identification">Cedula:</label>
+                        <input type="text" name="identification" placeholder="Ingrese su cedula" required> <br>
+                        <label for="address">Direccion:</label>
+                        <input type="text" name="address" placeholder="Ingrese su direccion de residencia" required> <br>
+                        <label for="internetPlan">Plan de Internet:</label>
+                        <input type="text" name="internetPlan" placeholder="Ingrese su plan de internet" required><br>
+                        <label for="pqr">PQR:</label>
+                        <input type="text" name="pqr" placeholder="Ingrese su pqr" required><br>
+                        </div>
+                        <input id="subBTN" type="submit" value="enviar">
+
+                </form>
+             </div>
+        </div>
+            
+            
+        
+        <button id="abrirAside" onclick="iniciarSesion(true)">Ver listado de peticiones</button>
+        <div class="container">
+        <div id="admin">
+            <form action="./AdministrarPQRs" method="POST">
+                <p><label for="user">Usuario:</label>
+                    <input id="user" type="text" name="username"  /></p>
+                <p><label for="pass">Contraseña:</label>
+                    <input id="pass" type="password" name="password"  /></p>
+                <p><input id="loginBtn" type="submit" value="enviar"></p>
+            </form>
+            <button onclick="iniciarSesion(false)">Cerrar</button>
+        </div>
+        </div>
+    </body>
+</html>

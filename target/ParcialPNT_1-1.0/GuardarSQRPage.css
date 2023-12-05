@@ -1,0 +1,38 @@
+
+ body{
+        background-image: linear-gradient(120deg, #C5E2FF, white);
+        font-family: 'Noto Sans JP', sans-serif;
+        margin: 100px;
+        
+ }
+ 
+ h1{
+        color: black;
+        text-align: center;
+    }
+
+table{
+        border-color: white;
+        background-color: white;
+        border-width: 0.5em;
+        border-style: solid;
+        padding: 0em 2em 0em  2em;
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        
+       
+        
+    }
+    th{
+        color: black;
+        text-transform: uppercase;
+        
+    }
+    td{
+        text-align:center;
+    }
+    tr{
+        color: black;
+    }
+  
